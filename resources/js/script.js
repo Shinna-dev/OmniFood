@@ -65,18 +65,15 @@ $(document).ready(function() {
 
 	/*  mobile navigation*/
 
-	/*$('.js--nav-icon').click(function() {
-		var nav = $('.js--main-nav');
-		var icon = $('js--nav-icon span');
-
-		nav.slideToggle(200);
-
-	/*	if (icon.hasClass('menu')) {
-			icon.addClass('close');
-			icon.removeClass('menu');
+	$('.js--nav-icon').click(function() {
+		$('.js--main-nav').slideToggle(200);
+		console.log($('mobile-icon menu').css('display'));
+		if ($('.mobile-icon-menu').css('display') != 'none') {
+			$('.mobile-icon-close').show();
+			$('.mobile-icon-menu').hide();
 		} else {
-			icon.addClass('menu');
-			icon.removeClass('close');
+			$('.mobile-icon-menu').show();
+			$('.mobile-icon-close').hide();
 		}
-	}); */
+	});
 });
