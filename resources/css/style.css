@@ -105,6 +105,7 @@ h3 {
 }
 
 .logo-black { 
+	display: none;
 	width: auto;
 	height: 50px;
 	float: left;
@@ -180,7 +181,7 @@ h3 {
 
 .sticky .logo { display: none; }
 .sticky .logo-black { 
-	display: block; 
+	display: none; 
 	margin-right: 120px;
 }
 
